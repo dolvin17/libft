@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 19:41:42 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/03/24 19:42:46 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/03/28 01:15:47 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	j = d_len;
 	if (dstsize <= d_len)
 		return (s_len + dstsize);
-	while (src[i] && i < dstsize + d_len -1)
+	while (src[i] && i < dstsize - d_len -1)
 		dst[j++] = src[i++];
 	dst[j] = '\0';
-	return (d_len + i);
+	return (d_len + s_len);
 }
 /*
 int	main(void)
