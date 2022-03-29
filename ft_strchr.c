@@ -6,14 +6,17 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 21:30:56 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/03/24 19:16:35 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/03/28 04:26:26 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
-{	
+char	*ft_strchr(const char *s, int __c)
+{
+	char	c;
+
+	c = __c;
 	while (*s != c)
 	{
 		if (*s == '\0')
