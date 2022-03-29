@@ -6,16 +6,18 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 08:31:29 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/03/24 20:04:15 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/03/28 04:24:50 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int __c)
 {
-	int	i;
+	int		i;
+	char	c;
 
+	c = __c;
 	i = ft_strlen((char *)s) + 1;
 	while (i--)
 	{
@@ -27,9 +29,9 @@ char	*ft_strrchr(const char *s, int c)
 /*
 int	main(void)
 {
-	const char	s[] = "karolisillia";
-	int	c = 'l';
-
-	printf("%s\n", ft_strrchr(s, c));
-	printf("%s\n", strrchr(s, c));
+	char s[] = "Karolsilla";
+	int	c = 'i';
+	
+	printf("%s\n", ft_strrchr(s, 't' + 256));
+	printf("%s\n", strrchr(s, 't' + 256));
 }*/
