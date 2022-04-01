@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 05:47:07 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/01 05:47:42 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/02 00:59:44 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,9 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 /*
-int main()
+int	main(void)
 {
-	ft_putnbr(-2147483648);
-
+	ft_putnbr_fd(42, 1);
+	ft_putchar_fd('\n', 1);
 	return (0);
-}
-*/
+}*/
