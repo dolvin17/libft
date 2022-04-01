@@ -6,12 +6,11 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 22:56:12 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/03/30 06:35:50 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/01 05:17:41 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -28,7 +27,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(str, s2, len);
 	return (str);
 }
-
+/*
 int main(void)
 {
      char    s1[] = "Marvin ";
@@ -41,4 +40,4 @@ int main(void)
      printf("%ld\n", ft_strlen(join));
  	 //system("leaks a.out");
      return (0);
-}
+}*/
