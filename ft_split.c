@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:06:13 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/01 05:17:18 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/04 00:15:20 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,10 +102,10 @@ int	main(void)
 	char	**tab;
 
 	i = 0;
-	tab = ft_split("marvin is a cat", 32);
-	while (i < 2)
+	tab = ft_split("marvin es mi amor", 32);
+	while (i < 4)
 	{
-		printf("string: %d%s\n", i, tab[i]);
+		printf("string: %d %s\n", i, tab[i]);
 		i++;
 	}
 	system ("leaks a.out");
