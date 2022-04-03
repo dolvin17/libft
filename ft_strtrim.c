@@ -6,11 +6,10 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:11:07 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/03/31 18:48:48 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/04 00:08:35 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
