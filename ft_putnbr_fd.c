@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 05:47:07 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:18 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:44:29 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* escribe el número 'n' en el fd dado */
 
 void	ft_putnbr_fd(int n, int fd)
 {

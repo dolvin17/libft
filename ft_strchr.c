@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 21:30:56 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:21 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:02:20 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* devuelve un puntero a la primera coincidencia de c en *s */
 
 char	*ft_strchr(const char *s, int __c)
 {

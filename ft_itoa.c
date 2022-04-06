@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 18:52:03 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:07 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:52:11 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* reserva con malloc y convierte en entero 
+un conjunto de chars */
 
 static size_t	ft_num_len(int n)
 {

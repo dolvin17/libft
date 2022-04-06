@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 21:32:48 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/03 21:35:37 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 02:44:35 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* itera lst y aplica 'f' al contenido de cada elemento */
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 09:50:42 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:28 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 05:52:31 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* localiza un substring en un string */
 
 char	*ft_strnstr(const char	*haystack, const char *needle, size_t len)
 {

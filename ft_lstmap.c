@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 21:36:24 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/03 23:49:40 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 02:46:24 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* itera lst y aplica 'f' a cada elemento
+si la aplicación es correcta, se genera una nueva lista */
 
 t_list	*ft_lstmap(t_list *node, void *(*f)(void *), void (*del)(void *))
 {

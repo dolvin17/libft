@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:53:03 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:02 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 16:39:58 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* testea cualquier char en busca de dígitos del 0 al 9 */
 
 int	ft_isdigit(int c)
 

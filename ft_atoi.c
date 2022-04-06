@@ -6,37 +6,35 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 13:23:20 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:14:42 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 20:31:03 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+/* Convierte un string de tipo *str en números de tipo int */
+
+int	ft_atoi(const char *str)
 {
 	long int	num;
 	long int	sign;
 
 	num = 0;
 	sign = 1;
-	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
-		nptr++;
-	if (*nptr == '-' && (ft_isdigit(*(nptr + 1))))
+	while (*str == 32 || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '-')
+		sign *= -1;
+	if (*str == '-' || *str == '+')
+		str++;
+	while (ft_isdigit(*str))
 	{
-		if (*nptr == '-')
-			sign *= -1;
-		nptr++;
-	}
-	if (*nptr == '+' && (ft_isdigit(*(nptr + 1))))
-		nptr++;
-	while (ft_isdigit(*nptr))
-	{
-		num = num * 10 + *nptr - '0';
+		num = num * 10 + *str - '0';
 		if (num * sign < -2147483648)
 			return (0);
 		else if (num * sign > 2147483647)
 			return (-1);
-		nptr++;
+		str++;
 	}
 	return (num * sign);
 }

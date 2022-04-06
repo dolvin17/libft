@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:16:18 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:14:53 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 16:38:40 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* testea cualquier char en busca de un char alfabético */
 
 int	ft_isalpha(int c)
 {

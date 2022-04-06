@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 03:31:35 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:19 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:33:01 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* escribe el string en el fd indicado */
 
 void	ft_putstr_fd(char *s, int chamizidio)
 {

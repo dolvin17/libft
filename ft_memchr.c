@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 12:10:13 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:11 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:00:50 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* devuelve un puntero a la primera coincidencia de c en *s */
 
 void	*ft_memchr(const void *s, int c, size_t n)
 

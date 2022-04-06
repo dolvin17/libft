@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:03:55 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:35 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:27:12 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Reserva con malloc un nuevo string,
+se basa en la unión de los dos strings tomados como parametros */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

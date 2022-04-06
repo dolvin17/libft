@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 22:56:12 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:23 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:30:19 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* reserva con malloc un nuevo string, basado en la union
+de los dos strings dados como parámetros */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

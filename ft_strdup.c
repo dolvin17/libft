@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 06:37:50 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:22 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 23:22:35 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* asigna memoria suficiente para una copia de *s,
+hace la copia y devuelve un puntero*/
 
 char	*ft_strdup(const char *s)
 {
@@ -28,7 +31,7 @@ char	*ft_strdup(const char *s)
 /*
 int	main(void)
 {
-	const char	s[] = "Caramba";
+	const char	s[] = "Marvin";
 
 	printf("Original: %s\n", strdup);
 	printf("Mine: %s\n", ft_strdup);

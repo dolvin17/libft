@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:11:07 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:08:35 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:28:06 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* reserva con malloc y devuelve una copia de s1, con los chars
+dados en 'set', eliminados del principio y del fin */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 11:38:19 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:14:50 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:13:19 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* asigna memoria dinámica y la inicializa y rellena con 0 */
 
 void	*ft_calloc(size_t count, size_t size)
 {

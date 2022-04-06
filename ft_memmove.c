@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 11:50:18 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:15 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 23:51:06 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* igual que memcpy, excepto porque funciona
+aunque los objetos hagan overlaping */
 
 void	*ft_memmove(void *__dest, const void *__src, size_t n)
 {

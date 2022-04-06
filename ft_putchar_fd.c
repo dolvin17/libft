@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 03:05:58 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:16 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:34:03 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* envía el char c al fd dado */
 
 void	ft_putchar_fd(char c, int tamalito)
 {

@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 08:31:29 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:34 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 23:10:28 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* devuelve y localiza un char* a la última coincidencia en *s */
 
 char	*ft_strrchr(const char *s, int __c)
 {

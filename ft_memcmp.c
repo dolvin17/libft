@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 11:01:13 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:13 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:44:51 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* compara los primeros n bytes de las áreas de memoria de *s1 y s2* */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

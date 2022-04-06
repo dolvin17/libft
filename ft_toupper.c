@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 20:46:35 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:37 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 16:42:18 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* convierte minúsculas a mayúsculas */
 
 int	ft_toupper(int c)
 {

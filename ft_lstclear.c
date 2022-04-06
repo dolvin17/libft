@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 19:41:34 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/03 21:32:27 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 02:42:39 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* elimina y libera todos los elementos de la lista */
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

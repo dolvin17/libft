@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:06:13 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:20 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 03:36:15 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* reserva con malloc y devuelve un array de strings 
+separa s con c como delimitador */
 
 static int	ft_count_words(char const *s, char c)
 {

@@ -6,18 +6,20 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 17:03:02 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:16 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 23:58:55 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* llena los primeros n bytes de *s con c */
 
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
 
 	ptr = s;
-	while (n-- > 0)
+	while (n--)
 	{
 		*ptr++ = c;
 	}

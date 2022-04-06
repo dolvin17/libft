@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 09:20:37 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:33 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/05 18:45:57 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* compara strings, los chars que aparecen después de '\0' no se comparan */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

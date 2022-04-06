@@ -6,11 +6,13 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 13:36:44 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/03 23:50:42 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 02:36:09 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* reserva con malloc y devuelve un elemento nuevo */
 
 t_list	*ft_lstnew(void *content)
 

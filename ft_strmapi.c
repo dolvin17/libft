@@ -6,11 +6,14 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:26:14 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/04 00:15:30 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/06 01:30:47 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* crea un nuevo string aplicando sucesivas veces la funcion 'f'
+usando malloc */
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
