@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 03:05:58 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 01:34:03 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/07 21:53:33 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 /* envía el char c al fd dado */
 
-void	ft_putchar_fd(char c, int tamalito)
+void	ft_putchar_fd(char c, int fd)
 {
-	write(tamalito, &c, 1);
+	if (fd > 0)
+		write(fd, &c, 1);
 }
 /*
 int	main(void)

@@ -6,11 +6,12 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 11:38:19 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 01:13:19 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/07 21:41:12 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
 /* asigna memoria dinámica y la inicializa y rellena con 0 */
 
@@ -19,6 +20,8 @@ void	*ft_calloc(size_t count, size_t size)
 	unsigned char	*p;
 	size_t			i;
 
+	if (size >= SIZE_MAX)
+		return (NULL);
 	p = malloc(count * size);
 	if (p != NULL)
 	{

@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 03:31:35 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 01:33:01 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/07 21:56:39 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 /* escribe el string en el fd indicado */
 
-void	ft_putstr_fd(char *s, int chamizidio)
+void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
 	if (!s)
 		return ;
 	i = 0;
-	while (s[i])
+	while (s[i] && fd > 0)
 	{
-		ft_putchar_fd(s[i], chamizidio);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }
