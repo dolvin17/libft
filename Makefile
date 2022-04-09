@@ -6,7 +6,7 @@
 #    By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/24 16:28:26 by ghuertas          #+#    #+#              #
-#    Updated: 2022/04/03 23:49:50 by ghuertas         ###   ########.fr        #
+#    Updated: 2022/04/09 22:36:14 by ghuertas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,15 +46,15 @@ SRCS =			ft_atoi.c \
 				ft_toupper.c \
 				
 
-BONUS_SRC =		ft_lstnew.c \
-				ft_lstadd_front.c \
-				ft_lstsize.c \
-				ft_lstlast.c \
-				ft_lstadd_back.c \
-				ft_lstdelone.c \
-				ft_lstclear.c \
-				ft_lstiter.c \
-				ft_lstmap.c \
+BONUS_SRC =		ft_lstnew_bonus.c \
+				ft_lstadd_front_bonus.c \
+				ft_lstsize_bonus.c \
+				ft_lstlast_bonus.c \
+				ft_lstadd_back_bonus.c \
+				ft_lstdelone_bonus.c \
+				ft_lstclear_bonus.c \
+				ft_lstiter_bonus.c \
+				ft_lstmap_bonus.c \
 				
 				
 OBJS = $(SRCS:.c=.o)
@@ -71,17 +71,17 @@ B_NAME = .bonus
 all: $(NAME)
 $(NAME): $(S_NAME)
 $(S_NAME):	$(OBJS)
-	ar crs $(LIBNAME) $(OBJS)
-	rm -f $(B_NAME)
-	touch $(S_NAME)
+	@ar crs $(LIBNAME) $(OBJS)
+	@rm -f $(B_NAME)
+	@touch $(S_NAME)
 $(B_NAME):	$(B_OBJS)
-	ar crs $(LIBNAME) $(B_OBJS)
-	rm -f $(S_NAME)
-	touch $(B_NAME)
+	@ar crs $(LIBNAME) $(B_OBJS)
+	@rm -f $(S_NAME)
+	@touch $(B_NAME)
 bonus: $(B_NAME)
 clean:
-	$(RM_RF) $(OBJS) $(B_OBJS)
+	@$(RM_RF) $(OBJS) $(B_OBJS)
 fclean: clean
-	$(RM_RF) $(OBJS) $(LIBNAME) $(S_NAME) $(B_NAME)
+	@$(RM_RF) $(OBJS) $(LIBNAME) $(S_NAME) $(B_NAME)
 re: fclean all
-.PHONY: clean fclean
+.PHONY: clean fclean all bonus re

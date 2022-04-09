@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 05:47:07 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/07 22:18:02 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/09 22:20:56 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (fd < 1)
+	if (fd < 0)
 		return ;
 	if (n == -2147483648)
 	{

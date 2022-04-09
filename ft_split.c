@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:06:13 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 03:36:15 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/09 20:22:58 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,18 +99,20 @@ char	**ft_split(char const *s, char c)
 	return (res);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	int		i;
 	char	**tab;
 
 	i = 0;
-	tab = ft_split("marvin es mi amor", 32);
-	while (i < 4)
+	tab = ft_split("buenos dias bueenas tardes buenas noches", 32);
+	while (i < 7)
 	{
 		printf("string: %d %s\n", i, tab[i]);
 		i++;
 	}
-	system ("leaks a.out");
+	//system ("leaks a.out");
 	return (0);
 }*/

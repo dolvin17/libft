@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 03:31:35 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/07 21:56:39 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/09 22:21:07 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr_fd(char *s, int fd)
 	if (!s)
 		return ;
 	i = 0;
-	while (s[i] && fd > 0)
+	while (s[i] && fd >= 0)
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;
