@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 21:28:15 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/05 16:41:46 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/25 11:21:05 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 /* convierte mayúsculas a minúsculas */
 
-int	ft_tolower(int c)
+int	ft_tolower(int c)//el char a modificar.
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	if (c >= 'A' && c <= 'Z')//si c es alfabeticamente mayuscula
+		return (c + 32);//sumo 32 en ascci para llegar a su equivalente en minuscula.
+	return (c);//si c ya era mayuscua, la retorno sin modificacion alguna. 
 }
 /*
 int	main(void)

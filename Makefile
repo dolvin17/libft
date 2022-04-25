@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+         #
+#    By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/24 16:28:26 by ghuertas          #+#    #+#              #
-#    Updated: 2022/04/09 22:36:14 by ghuertas         ###   ########.fr        #
+#    Updated: 2022/04/25 11:18:37 by dolvin17         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,17 +71,17 @@ B_NAME = .bonus
 all: $(NAME)
 $(NAME): $(S_NAME)
 $(S_NAME):	$(OBJS)
-	@ar crs $(LIBNAME) $(OBJS)
+	ar crs $(LIBNAME) $(OBJS)
 	@rm -f $(B_NAME)
-	@touch $(S_NAME)
+	touch $(S_NAME)
 $(B_NAME):	$(B_OBJS)
-	@ar crs $(LIBNAME) $(B_OBJS)
+	ar crs $(LIBNAME) $(B_OBJS)
 	@rm -f $(S_NAME)
 	@touch $(B_NAME)
 bonus: $(B_NAME)
 clean:
-	@$(RM_RF) $(OBJS) $(B_OBJS)
+	$(RM_RF) $(OBJS) $(B_OBJS)
 fclean: clean
-	@$(RM_RF) $(OBJS) $(LIBNAME) $(S_NAME) $(B_NAME)
+	$(RM_RF) $(OBJS) $(LIBNAME) $(S_NAME) $(B_NAME)
 re: fclean all
 .PHONY: clean fclean all bonus re

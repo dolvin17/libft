@@ -3,25 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 17:43:01 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 02:53:08 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:27:10 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* reemplaza n bytes de s por ceros 
-mejor usar memset */
+/* reemplaza el tamaño de mi buffer por zeros.
+no seais como yo, mejor usar memset, insensatos */
 
-void	ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n) //setear todos los elementos de s hasta llenar el buffer, con zeros. 
 {
-	int	i;
+	int	i; 
 
-	i = 0;
-	while (n--)
-		((unsigned char *)s)[i++] = '\0';
+	i = 0; // contador a cero 
+	while (n--) //mientas n no llegue a cero (buffer lleno de zeros)
+		((unsigned char *)s)[i++] = '\0'; // voy seteando S en la posicion i, = al contrabarra cero. 
+		//y dentro aprovecho a i++ para posicionarme al siguiente caracter mientras itero. 
 }
 /*
 int	main(void)

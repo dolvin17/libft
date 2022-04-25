@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 19:41:34 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 02:42:39 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/22 01:11:21 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*pos;
 
-	if (!lst)
-		return ;
-	while (*lst != NULL)
+	if (!lst)//si la lista no existe
+		return ; //no hago nada. 
+	while (*lst != NULL) //mientras mi nodo actual sea distinto de null. 
 	{
-		pos = (*lst)->next;
-		ft_lstdelone(*lst, del);
-		*lst = pos;
+		pos = (*lst)->next; // guardo la ref DE POS en el siguiente nodo  (NEXT)
+		ft_lstdelone(*lst, del); //elimino el nodo y libero la memoria. 
+		*lst = pos; //repito la operacion hasta salir del bucle. 
 	}
 }

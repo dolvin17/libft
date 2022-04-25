@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 11:01:13 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 01:44:51 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/22 01:12:31 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,18 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
-	while (i < n)
+	while (i < n) //mientras i < que el tamaño de mi buffer
 	{
 		if (*((unsigned char *)s1 + i) == *((unsigned char *)s2 + i))
-			i++;
+		// si mi string1 + la posicion actual de su puntero == la posición actual del puntero en mi string2
+			i++; //avanzo una posicion en ambos strings. 
 		else
 			return ((*((unsigned char *)s1 + i)) - *((unsigned char *)s2 + i));
-	}
+			//sino, devuelvo una resta producto de la diferencia de la ultima posicion coincidente. 
+	}	
 	return (0);
 }
 /*

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 05:06:44 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/09 22:20:17 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/25 11:04:43 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (fd >= 0)
+	if (fd >= 0)//si el file descriptor dado como parametro es mayor que cero. 
 	{
-		ft_putstr_fd(s, fd);
-		ft_putchar_fd('\n', fd);
+		ft_putstr_fd(s, fd);//llamo a putstr, le paso el string y fd. 
+		ft_putchar_fd('\n', fd);//lamo a putchar para meter el salto de linea en el fd dado. 
 	}
 }
 /*

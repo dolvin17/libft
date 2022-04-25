@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 16:37:07 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/05 16:39:13 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:39:48 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int	ft_isascii(int c)
 {
-	return (c >= 0 && c < 128);
+	return (c >= 0 && c < 128); //man ascii para más info
 }
 /*
 int	main(void)

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 19:35:39 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/06 02:43:57 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/20 21:36:37 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 void	ft_lstdelone(t_list *lst, void (*del) (void *))
 {
-	if (!lst)
-		return ;
-	if (del)
-		del(lst->content);
-	free(lst);
+	if (!lst) //si el nodo no existe
+		return ; //no hago nada. 
+	if (del) //si del es distinto de null. 
+		del(lst->content); //aplico del al contenido del nodo actual. 
+	free(lst);//libero la memoria tras eliminar el contenido. 
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 13:23:20 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/08 20:24:01 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:25:13 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Convierte un string de tipo *str en números de tipo int */
+/* Convierte un string en números de tipo int */
 
 int	ft_atoi(const char *str)
 {
@@ -27,29 +27,29 @@ int	ft_atoi(const char *str)
 		sign *= -1;
 	if (*str == '-' || *str == '+')
 		str++;
-	while (ft_isdigit(*str))
+	while (ft_isdigit(*str)) //estoy en un digito. 
 	{
-		num = num * 10 + (*str - '0');
-		if (num > 9223372036854775808UL && sign == -1)
+		num = num * 10 + (*str - '0'); //mi acumulador va a ser igual a lo acumulado hasta este punto multiplicado el nº * 10 + el valor decimal de mi acumulador, esto ocurre restando la representacion ascii decimal de mi valor - 0. 
+		if (num > 9223372036854775808UL && sign == -1) // para controlar overflow. si lo acumulado hasta este punto es mayor que el valor min de unsigned long.
 			return (0);
-		if (num > 9223372036854775807UL && sign == 1)
+		if (num > 9223372036854775807UL && sign == 1) //si lo acumulado hasta este punto es mayor que el valor max de unsigned long.
 			return (-1);
-		str++;
+		str++; //continuo iterando hasta salir del bucle. 
 	}
-	return (num * sign);
+	return (num * sign); //devuelvo mi numero multiplicado por mi signo.
 }
 /*
 int	main(void)
 {
-	const char	test1[] = "		456"; //tiene whitespaces al inicio
-	const char	test2[] = "-456"; //tiene signo - al inicio
-	const char	test3[] = "+456"; // tiene signo + al inicio
-	const char	test4[] = "+-----456"; // tiene mas de 2 signos al inicio
-	const char	test5[] = "a456"; // tiene letras al inicio
-	const char	test6[] = "@456"; //tiene simbolos al inicio
-	const char	test7[] = "45-789"; //tiene simbolos en el medio
-	const char	test8[] = "-4 5 6-789";//tiene simbolos en medio
-	const char	test9[] = "\04";//tiene un caracter no imprimible al inicio
+	const char	test1[] = "		4693"; //tiene whitespaces al inicio
+	const char	test2[] = "-4693"; //tiene signo - al inicio
+	const char	test3[] = "+493"; // tiene signo + al inicio
+	const char	test4[] = "+-----4982"; // tiene mas de 2 signos al inicio
+	const char	test5[] = "a493"; // tiene letras al inicio
+	const char	test6[] = "@493"; //tiene simbolos al inicio
+	const char	test7[] = "43-32456"; //tiene simbolos en el medio
+	const char	test8[] = "-56 5 2-876";//tiene simbolos en medio
+	const char	test9[] = "\7893";//tiene un caracter no imprimible al inicio
 	printf("Original: %i\n", atoi(test1));
 	printf("Mine: %i\n", ft_atoi(test1));
 	printf("Original: %i\n", atoi(test2));

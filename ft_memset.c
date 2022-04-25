@@ -3,29 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dolvin17 <grks_17@hotmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 17:03:02 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/04/05 23:58:55 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/04/25 11:01:30 by dolvin17         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* llena los primeros n bytes de *s con c */
+/* sustituye el buffer de *s con c */
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n) //string, valor por el sustituyente y el tamaño de buffer
 {
 	unsigned char	*ptr;
 
-	ptr = s;
-	while (n--)
+	ptr = s; 
+	while (n--) //mientras el buffre distinto de cero.
 	{
-		*ptr++ = c;
+		*ptr++ = c; //mi puntero igual a c y paso a la siguiente referencia de  memoria. 
 	}
-	return (s);
+	return (s); // devuelvo el string modificado
 }
 /*
+#include <string.h>
+#include <stdio.h>
 int	main(void)
 {
 	char	buffer1[] = "This is a test";
