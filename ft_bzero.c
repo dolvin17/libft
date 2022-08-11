@@ -26,7 +26,6 @@ void	ft_bzero(void *s, size_t n) //setear todos los elementos de s hasta llenar 
 }
 /*
 int	main(void)
-{
     char buffer1[] = "This is a test";
     char buffer2[] = "This is a test";
 
